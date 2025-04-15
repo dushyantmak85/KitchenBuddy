@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 887785874141437781}
   m_Layer: 0
-  m_Name: TamatoSpawnPoint
+  m_Name: CounterTopPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
