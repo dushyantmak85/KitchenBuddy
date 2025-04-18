@@ -5,12 +5,9 @@ public class CuttingCounter : BaseCounter
 {
     [SerializeField] private CuttingRecipeSO[] cuttingRecipeSOs;
     private int cuttingProgress;
-    public  event EventHandler<OnCuttingProgressChangedEventArgs> OnCuttingProgressChanged;
+    public  event EventHandler<IHasProgress.OnProgressChangedEventArgs> OnProgressChanged;
     public event EventHandler OnCut;
-    public class OnCuttingProgressChangedEventArgs : EventArgs {
-        public float progressNormalized;
-    }
-
+    
 
     public override void Interact(PlayerController player)
     {
@@ -54,7 +51,7 @@ public class CuttingCounter : BaseCounter
             cuttingProgress++;
             CuttingRecipeSO cuttingRecipeSO = GettingCuttingRecipeSOwithInput(GetKitchenObject().GetKitchenObjectSO());
 
-            OnCuttingProgressChanged?.Invoke(this, new OnCuttingProgressChangedEventArgs
+            OnProgressChanged?.Invoke(this, new IHasProgress.OnProgressChangedEventArgs
             {
                 progressNormalized = (float)cuttingProgress / cuttingRecipeSO.Cuttingprogress
 
