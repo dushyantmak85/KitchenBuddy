@@ -2,10 +2,12 @@ using System;
 using UnityEngine;
 using static CuttingCounter;
 
-public class StoveCounterScript : BaseCounter
+public class StoveCounterScript : BaseCounter,IHasProgress
 {
     [SerializeField] private CookingRecipeSO[] cookingRecipeSOs;
     [SerializeField] private BurningRecipeSO[] BurningRecipeSOs;
+    public event EventHandler<IHasProgress.OnProgressChangedEventArgs> OnProgressChanged;
+
 
     private float Cookingtimer;
     private float burningTimer;
@@ -58,15 +60,21 @@ public class StoveCounterScript : BaseCounter
                     burningTimer = 0f;
                     burningRecipeSO = GettingBurningRecipeSOwithInput(GetKitchenObject().GetKitchenObjectSO());
                     OnStateChanged?.Invoke(this, new OnStateChangedEventArgs { state = state });
+                 
 
                 }
+
+                OnProgressChanged?.Invoke(this, new IHasProgress.OnProgressChangedEventArgs
+                {
+                    progressNormalized = (float)Cookingtimer / cookingRecipeSO.CookingTime
+
+                });
                 Debug.Log("Cooking in progress");
                 break;
 
             case State.Cooked:
                 if (burningRecipeSO == null || !KitchenObjectPresent()) return;
 
-                Debug.Log(burningTimer);
                 burningTimer += Time.deltaTime;
 
                 if (burningTimer > burningRecipeSO.BurningTimeMax)
@@ -78,7 +86,15 @@ public class StoveCounterScript : BaseCounter
                     KitchenObjects.SpawnKitchenObject(outputKitchenObjectSO, this);
                     state = State.Burned;
                     OnStateChanged?.Invoke(this, new OnStateChangedEventArgs { state = state });
+                    OnProgressChanged?.Invoke(this, new IHasProgress.OnProgressChangedEventArgs
+                    {
+                        progressNormalized = 0f
+                    });
                 }
+                OnProgressChanged?.Invoke(this, new IHasProgress.OnProgressChangedEventArgs
+                {
+                    progressNormalized = burningTimer / burningRecipeSO.BurningTimeMax
+                });
                 Debug.Log("Burning in progress");
                 break;
                 
@@ -127,6 +143,11 @@ public class StoveCounterScript : BaseCounter
             {
                 GetKitchenObject().SetKitchenObjectParent(player);
                 state = State.Idle;
+                OnStateChanged?.Invoke(this, new OnStateChangedEventArgs { state = state });
+                OnProgressChanged?.Invoke(this, new IHasProgress.OnProgressChangedEventArgs
+                {
+                    progressNormalized = 0f
+                });
             }
 
         }

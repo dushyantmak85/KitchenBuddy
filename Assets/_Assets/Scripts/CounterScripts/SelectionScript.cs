@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class SelectionScript : MonoBehaviour
 {
-    [SerializeField] private BaseCounter clearCounter;
+    [SerializeField] private BaseCounter Counter;
     [SerializeField] private GameObject[] VisualGameObject;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
@@ -21,7 +21,7 @@ public class SelectionScript : MonoBehaviour
     private void Player_OnSelectedCounterChanged(object sender, PlayerController.OnSelectedCounterChangedEventArgs e)
     {
         
-            if (e.SelectedCounter == clearCounter)
+            if (e.SelectedCounter == Counter)
             {
                 Show();
             }

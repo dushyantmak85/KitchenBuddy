@@ -180,7 +180,7 @@ GameObject:
   - component: {fileID: 994380363124493698}
   - component: {fileID: 3332665714915753218}
   m_Layer: 5
-  m_Name: CuttingProgressBar
+  m_Name: ProgressBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -282,8 +282,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40cff6b3514578648bf955c9ef98281f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IHasProgress: {fileID: 8498816541446717241}
   BarImage: {fileID: 6122026928724089394}
-  cuttingCounter: {fileID: 1297888999415156894}
 --- !u!1001 &1979583622318501405
 PrefabInstance:
   m_ObjectHideFlags: 0
