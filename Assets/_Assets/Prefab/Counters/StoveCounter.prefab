@@ -575,7 +575,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5195bd7c615133446baf73fc1be090a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clearCounter: {fileID: 4833434069098992578}
+  Counter: {fileID: 4833434069098992578}
   VisualGameObject:
   - {fileID: 2783396641709074486}
   - {fileID: 6855032648820693960}

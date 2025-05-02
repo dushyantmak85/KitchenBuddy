@@ -23,9 +23,21 @@ public class ClearCounter : BaseCounter
         {
             if (player.KitchenObjectPresent())
             {
-                Debug.Log("Player already has a kitchen object");
+                if (player.GetKitchenObject() is PlateKitchenObject)
+                {
+                    PlateKitchenObject plateKitchenObject = player.GetKitchenObject() as PlateKitchenObject;
+                    if (plateKitchenObject.TryAddIngredient(GetKitchenObject().GetKitchenObjectSO()))
+                    {
+                        GetKitchenObject().DestroySelf();
+
+                    }
+        
+
+                }
 
             }
+
+           
             else
             {
                 GetKitchenObject().SetKitchenObjectParent(player);

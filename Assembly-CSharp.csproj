@@ -65,7 +65,9 @@
     <Compile Include="Assets\_Assets\Scripts\CounterScripts\SelectionScript.cs" />
     <Compile Include="Assets\_Assets\Scripts\PlayerScripts\PlayerController.cs" />
     <Compile Include="Assets\_Assets\Scripts\CounterScripts\BaseCounter.cs" />
+    <Compile Include="Assets\_Assets\Scripts\CounterScripts\PlatesCounterVisual.cs" />
     <Compile Include="Assets\_Assets\Scripts\KitchenObjectScripts\KitchenObjects.cs" />
+    <Compile Include="Assets\_Assets\Scripts\CounterScripts\PlateKitchenObject.cs" />
     <Compile Include="Assets\_Assets\Scripts\CounterScripts\TrashCounterScript.cs" />
     <Compile Include="Assets\_Assets\Scripts\ScriptableObjects\CookingRecipeSO.cs" />
     <Compile Include="Assets\_Assets\Scripts\CounterScripts\ClearCounter.cs" />
@@ -78,6 +80,7 @@
     <Compile Include="Assets\_Assets\Scripts\PlayerScripts\GameInput.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\PlayerInputActions.cs" />
+    <Compile Include="Assets\_Assets\Scripts\CounterScripts\PlatesCounterScript.cs" />
     <Compile Include="Assets\_Assets\Scripts\KitchenObjectScripts\IKitchenObjectParent.cs" />
     <Compile Include="Assets\_Assets\Scripts\CounterScripts\Container Counter.cs" />
     <Compile Include="Assets\_Assets\Scripts\ProgressBarScript\IHasProgress.cs" />
