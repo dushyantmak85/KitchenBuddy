@@ -32,7 +32,17 @@ public class CuttingCounter : BaseCounter,IHasProgress
         {
             if (player.KitchenObjectPresent())
             {
-                Debug.Log("Player already has a kitchen object");
+                if (player.GetKitchenObject().tryGetPlate(out PlateKitchenObject plateKitchenObject))
+                {
+
+                    if (plateKitchenObject.TryAddIngredient(GetKitchenObject().GetKitchenObjectSO()))
+                    {
+                        GetKitchenObject().DestroySelf();
+
+                    }
+
+
+                }
 
             }
             else

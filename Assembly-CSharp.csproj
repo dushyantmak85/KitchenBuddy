@@ -66,6 +66,7 @@
     <Compile Include="Assets\_Assets\Scripts\PlayerScripts\PlayerController.cs" />
     <Compile Include="Assets\_Assets\Scripts\CounterScripts\BaseCounter.cs" />
     <Compile Include="Assets\_Assets\Scripts\CounterScripts\PlatesCounterVisual.cs" />
+    <Compile Include="Assets\_Assets\Scripts\KitchenObjectScripts\PlateCompleteScript.cs" />
     <Compile Include="Assets\_Assets\Scripts\KitchenObjectScripts\KitchenObjects.cs" />
     <Compile Include="Assets\_Assets\Scripts\CounterScripts\PlateKitchenObject.cs" />
     <Compile Include="Assets\_Assets\Scripts\CounterScripts\TrashCounterScript.cs" />
