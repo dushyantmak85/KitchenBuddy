@@ -34,9 +34,17 @@ public class PlateKitchenObject : KitchenObjects
             return false;
         }
         KitchenObjectSOs.Add(kitchenObjectSO);
+        OnIngredientAdded?.Invoke(this, new OnIngredientAddedEventArgs {
+            kitchenObjectSO = kitchenObjectSO
+        });
        
         return true;
         
     
+    }
+
+    public List<KitchenObjectSO> ListOfKitchenObjects()
+    {
+        return KitchenObjectSOs;
     }
 }

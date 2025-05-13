@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour,IKitchenObjectParent
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+   
     [SerializeField] private float movespeed=7f;
     [SerializeField] private GameObject PlayerVisual;
     [SerializeField] private GameInput input;

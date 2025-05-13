@@ -49,12 +49,11 @@ MonoBehaviour:
   KitchenObjectSO: {fileID: 11400000, guid: 6f19c6015f4b19942b50cf3804ce086a, type: 2}
   validKitchenObjectSOs:
   - {fileID: 11400000, guid: 9a4c47138501c0d4daa56bb2173eeffd, type: 2}
-  - {fileID: 11400000, guid: ecf92deec9a35eb4ea9cfaf989c6d5a9, type: 2}
-  - {fileID: 11400000, guid: ae33ac1cfa8d4e74a81d3e21f5ea920e, type: 2}
-  - {fileID: 11400000, guid: 460674601ae16a74cad6290e21c52d77, type: 2}
-  - {fileID: 11400000, guid: 5c7427c7c7d14104ebf753e76877f7a0, type: 2}
-  - {fileID: 11400000, guid: ad73cbcd7399b2d418102edfb9479384, type: 2}
+  - {fileID: 11400000, guid: f592d3124b9b9c149a14d5ee52e459f7, type: 2}
   - {fileID: 11400000, guid: e26fb1c4bcfe49c4a9b9e326c6f0cb61, type: 2}
+  - {fileID: 11400000, guid: ad73cbcd7399b2d418102edfb9479384, type: 2}
+  - {fileID: 11400000, guid: a4538183501d85d429b1ee2ac99a0678, type: 2}
+  - {fileID: 11400000, guid: ae33ac1cfa8d4e74a81d3e21f5ea920e, type: 2}
 --- !u!1001 &3098205093739279250
 PrefabInstance:
   m_ObjectHideFlags: 0
