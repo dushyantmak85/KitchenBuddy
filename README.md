@@ -5,7 +5,7 @@ Here's a professional `README.md` file tailored for your **3D KitchenBuddy** gam
 
 **KitchenBuddy 3D** is an interactive cooking simulation game built using **Unity 3D**. Step into the virtual kitchen and prepare delicious meals using realistic ingredients, appliances, and tools!
 
-![KitchenBuddy 3D Screenshot](path/to/screenshot.png) <!-- Replace with actual image path -->
+
 
 ---
 
@@ -29,7 +29,7 @@ Here's a professional `README.md` file tailored for your **3D KitchenBuddy** gam
 ### How to Run
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/KitchenBuddy3D.git
+   git clone https://github.com/dushyantmak85/KitchenBuddy3D.git
 ````
 
 2. Open the project in Unity.
@@ -61,18 +61,11 @@ KitchenBuddy3D/
 
 ---
 
-## 📸 Screenshots
 
-<!-- Add your screenshots here -->
-
-![Chopping Scene](path/to/chopping.png)
-![Cooking Scene](path/to/cooking.png)
-
----
 
 ## 🙌 Credits
 
-* Game Developer: \[Your Name]
+* Game Developer: \[Dushyant Makwana]
 * 3D Assets: Unity Asset Store / Custom
 * Sounds: freesound.org, or royalty-free sources
 
