@@ -89,7 +89,4 @@ Feel free to open issues or submit pull requests for suggestions and improvement
 
 ```
 
----
 
-Would you like help generating a logo or cover image for it too? Or want to add a how-to-play section with GIFs or YouTube link?
-```
