@@ -8,6 +8,7 @@ public class DeliveryCounterVisual : BaseCounter
         {
             if(player.GetKitchenObject().tryGetPlate(out PlateKitchenObject plateKitchenObject))
             {
+                DeliveryManager.Instance.CheckIngredients(plateKitchenObject);
                 player.GetKitchenObject().DestroySelf();
             }
         }

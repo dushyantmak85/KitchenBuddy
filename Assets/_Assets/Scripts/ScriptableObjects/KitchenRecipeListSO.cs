@@ -4,7 +4,7 @@ using System.Collections.Generic;
 [CreateAssetMenu]
 public class KitchenRecipeListSO : ScriptableObject
 {
-    [SerializeField] private List<KitchenRecipeSO> KitchenRecipeList;
+    public List<KitchenRecipeSO> KitchenRecipeList;
 
     
 }
