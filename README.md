@@ -86,5 +86,3 @@ If you like the project, please give it a ⭐ on GitHub!
 ## 🗣️ Feedback
 
 Feel free to open issues or submit pull requests for suggestions and improvements.
-
-```
