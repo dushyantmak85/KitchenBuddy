@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour,IKitchenObjectParent
     float playerHeight = 0.5f;
     private bool IsWalking;
     private BaseCounter SelectedCounter;
+    public event EventHandler OnPickup;
 
     public static PlayerController Instance { get; private set; }
 
@@ -199,6 +200,11 @@ public class PlayerController : MonoBehaviour,IKitchenObjectParent
     public void SetKitchenObject(KitchenObjects KitchenObject)
     {
         this.KitchenObject = KitchenObject;
+        if (KitchenObject != null)
+        {
+            OnPickup?.Invoke(this, EventArgs.Empty);
+        }
+        
     }
 
     public KitchenObjects GetKitchenObject()

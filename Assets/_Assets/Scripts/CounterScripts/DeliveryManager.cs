@@ -9,7 +9,8 @@ public class DeliveryManager : MonoBehaviour
 
     public  event EventHandler RecipeInWaiting;
     public  event EventHandler RecipeWaitingEnd;
-
+    public event EventHandler OnRecipeSuccess;
+    public event EventHandler OnRecipeFailure;
     private int waitingRecipeMax = 4;
     private float DeliverRecipeCounter;
     private float DeliverRecipeCounterMax = 4f;
@@ -63,22 +64,23 @@ public class DeliveryManager : MonoBehaviour
                     if (!IngredientFound)
                     {
                         KitchenObjectContentMatches = false;
+                     
                     }
                 }
 
                 if (KitchenObjectContentMatches)
                 {
-                    Debug.Log("Successfully delivered the required order ");
                     waitingRecipeSOList.Remove(waitingrecipe);
                     RecipeWaitingEnd?.Invoke(this, EventArgs.Empty);
+                    OnRecipeSuccess?.Invoke(this, EventArgs.Empty);
                     return;
                 }
-            }          
+            }  
+            
 
         }
+        OnRecipeFailure?.Invoke(this, EventArgs.Empty);
 
-        Debug.Log("Plate doesn't contain the required recipe!!");
-     
         return;
     }
 
