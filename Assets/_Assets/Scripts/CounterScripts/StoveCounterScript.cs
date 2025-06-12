@@ -14,7 +14,7 @@ public class StoveCounterScript : BaseCounter,IHasProgress
     private CookingRecipeSO cookingRecipeSO;
     private BurningRecipeSO burningRecipeSO;
 
-    public event EventHandler<OnStateChangedEventArgs> OnStateChanged;
+    public  event EventHandler<OnStateChangedEventArgs> OnStateChanged;
     public class OnStateChangedEventArgs: EventArgs
     {
         public State state;
@@ -45,14 +45,12 @@ public class StoveCounterScript : BaseCounter,IHasProgress
 
             case State.Cooking:
                 if (cookingRecipeSO == null || !KitchenObjectPresent()) return;
-
-                Debug.Log(Cookingtimer);
                 Cookingtimer += Time.deltaTime;
 
                 if (Cookingtimer > cookingRecipeSO.CookingTime)
                 {
                     Cookingtimer = 0f;
-                    Debug.Log("Cooking complete");
+                  
                     KitchenObjectSO outputKitchenObjectSO = CookingKitchenObject(GetKitchenObject().GetKitchenObjectSO());
                     GetKitchenObject().DestroySelf();
                     KitchenObjects.SpawnKitchenObject(outputKitchenObjectSO, this);
@@ -69,7 +67,7 @@ public class StoveCounterScript : BaseCounter,IHasProgress
                     progressNormalized = (float)Cookingtimer / cookingRecipeSO.CookingTime
 
                 });
-                Debug.Log("Cooking in progress");
+              
                 break;
 
             case State.Cooked:
@@ -80,7 +78,7 @@ public class StoveCounterScript : BaseCounter,IHasProgress
                 if (burningTimer > burningRecipeSO.BurningTimeMax)
                 {
                     burningTimer = 0f;
-                    Debug.Log("Burning complete");
+              
                     KitchenObjectSO outputKitchenObjectSO = BurningKitchenObject(GetKitchenObject().GetKitchenObjectSO());
                     GetKitchenObject().DestroySelf();
                     KitchenObjects.SpawnKitchenObject(outputKitchenObjectSO, this);
@@ -95,7 +93,7 @@ public class StoveCounterScript : BaseCounter,IHasProgress
                 {
                     progressNormalized = burningTimer / burningRecipeSO.BurningTimeMax
                 });
-                Debug.Log("Burning in progress");
+              
                 break;
                 
 
