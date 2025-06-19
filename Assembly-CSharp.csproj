@@ -80,6 +80,7 @@
     <Compile Include="Assets\_Assets\Scripts\ScriptableObjects\KitchenObjectSO.cs" />
     <Compile Include="Assets\_Assets\Scripts\CounterScripts\CuttingCounter.cs" />
     <Compile Include="Assets\_Assets\Scripts\CounterScripts\ContainerCounterVisual.cs" />
+    <Compile Include="Assets\_Assets\Scripts\UI Scripts\GameOverUI.cs" />
     <Compile Include="Assets\_Assets\Scripts\ScriptableObjects\KitchenRecipeSO.cs" />
     <Compile Include="Assets\_Assets\Scripts\ScriptableObjects\CuttingRecipeSO.cs" />
     <Compile Include="Assets\_Assets\Scripts\CounterScripts\DeliveryCounterVisual.cs" />
@@ -91,13 +92,16 @@
     <Compile Include="Assets\_Assets\Scripts\UI Scripts\ProgressBarUI.cs" />
     <Compile Include="Assets\PlayerInputActions.cs" />
     <Compile Include="Assets\_Assets\Scripts\Camera Scripts\LookAtCamera.cs" />
+    <Compile Include="Assets\_Assets\Scripts\UI Scripts\CountDownUI.cs" />
     <Compile Include="Assets\_Assets\Scripts\CounterScripts\PlatesCounterScript.cs" />
     <Compile Include="Assets\_Assets\Scripts\KitchenObjectScripts\IKitchenObjectParent.cs" />
     <Compile Include="Assets\_Assets\Scripts\UI Scripts\IHasProgress.cs" />
     <Compile Include="Assets\_Assets\Scripts\CounterScripts\Container Counter.cs" />
+    <Compile Include="Assets\_Assets\Scripts\PlayerScripts\GameManager.cs" />
     <Compile Include="Assets\_Assets\Scripts\UI Scripts\PlateUIScript.cs" />
     <Compile Include="Assets\_Assets\Scripts\CounterScripts\DeliveryManager.cs" />
     <Compile Include="Assets\_Assets\Scripts\SoundManagerScript.cs" />
+    <Compile Include="Assets\_Assets\Scripts\PlayerFootStepSound.cs" />
     <Compile Include="Assets\_Assets\Scripts\PlayerScripts\WalkingTransition.cs" />
     <Compile Include="Assets\_Assets\Scripts\CounterScripts\StoveCounterScript.cs" />
   </ItemGroup>

@@ -4,6 +4,13 @@ using UnityEngine.Rendering;
 public class SoundManagerScript : MonoBehaviour
 {
     [SerializeField] private SoundRefsSO soundRefs;
+    public static SoundManagerScript instance { get; private set; }
+
+    private void Awake()
+    {
+        instance = this;
+    }
+
     private void Start()
     {
         DeliveryManager.Instance.OnRecipeSuccess += PlaySuccessSound;
@@ -33,7 +40,7 @@ public class SoundManagerScript : MonoBehaviour
         AudioSource.PlayClipAtPoint(audioClip, position, volume);
     }
 
-    private void PlaySoundArrays(AudioClip[] audioClips, Vector3 position, float volume = 80f)
+    private void PlaySoundArrays(AudioClip[] audioClips, Vector3 position, float volume = 200f)
     {
         if (audioClips.Length == 0) return;
         int randomIndex = Random.Range(0, audioClips.Length);
@@ -74,6 +81,11 @@ public class SoundManagerScript : MonoBehaviour
         {
             PlaySoundArrays(soundRefs.trash, trashCounter.transform.position);
         }
+    }
+
+    public void PlayFootStepSound(Vector3 position,float volume)
+    {
+        PlaySoundArrays(soundRefs.footstep, position,volume);
     }
 
 }

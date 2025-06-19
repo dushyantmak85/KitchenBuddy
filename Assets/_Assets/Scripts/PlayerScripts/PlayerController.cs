@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour,IKitchenObjectParent
     private KitchenObjects KitchenObject;
 
     float playerHeight = 0.5f;
-    private bool IsWalking;
+    public bool IsWalking;
     private BaseCounter SelectedCounter;
     public event EventHandler OnPickup;
 
@@ -57,6 +57,8 @@ public class PlayerController : MonoBehaviour,IKitchenObjectParent
 
     private void GameInput_OnInteraction(object sender, EventArgs e)
     {
+        if (!GameManager.Instance.IsGamePlaying()) return;
+
         if(SelectedCounter!=null)
         {
             SelectedCounter.Interact(this); 
@@ -69,6 +71,8 @@ public class PlayerController : MonoBehaviour,IKitchenObjectParent
 
     private void GameInput_OnInteractAlternateAction(object sender, EventArgs e)
     {
+        if (!GameManager.Instance.IsGamePlaying()) return;
+
         if (SelectedCounter != null)
         {
             SelectedCounter.OnInteractCutAction(this);
