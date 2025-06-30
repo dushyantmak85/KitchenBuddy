@@ -2,15 +2,27 @@ using UnityEngine;
 
 public class GameOverUI : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] private TMPro.TextMeshProUGUI RecipesCountText;
+    [SerializeField] private AudioSource GameOverSound;
+
+    private void Start()
     {
-        
+        GameManager.Instance.OnGameStateChanged += GameManager_OnGameStateChanged;
+        gameObject.SetActive(false); // Initially hide the gameOver UI
     }
 
-    // Update is called once per frame
-    void Update()
+    private void GameManager_OnGameStateChanged(object sender, System.EventArgs e)
     {
-        
+        if (GameManager.Instance.IsGameOver())
+        {
+            GameOverSound.Play();
+
+            gameObject.SetActive(true);
+
+            RecipesCountText.text = DeliveryManager.Instance.NumberOfRecipesDelivered.ToString();   
+        }
+      
     }
+
+   
 }

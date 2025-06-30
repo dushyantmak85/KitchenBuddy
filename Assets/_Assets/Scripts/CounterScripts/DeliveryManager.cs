@@ -2,20 +2,22 @@ using NUnit.Framework;
 using UnityEngine;
 using System.Collections.Generic;
 using System;
+using UnityEngine.Rendering;
 public class DeliveryManager : MonoBehaviour
 {
     [SerializeField] private KitchenRecipeListSO RecipeList;
     private List<KitchenRecipeSO> waitingRecipeSOList;
 
-    public  event EventHandler RecipeInWaiting;
-    public  event EventHandler RecipeWaitingEnd;
+    public event EventHandler RecipeInWaiting;
+    public event EventHandler RecipeWaitingEnd;
     public event EventHandler OnRecipeSuccess;
     public event EventHandler OnRecipeFailure;
     private int waitingRecipeMax = 4;
     private float DeliverRecipeCounter;
     private float DeliverRecipeCounterMax = 4f;
-    public static  DeliveryManager Instance { get; private set; }
-   
+    public static DeliveryManager Instance { get; private set; }
+    public float NumberOfRecipesDelivered;
+
 
     private void Awake()
     {
@@ -35,18 +37,19 @@ public class DeliveryManager : MonoBehaviour
                 KitchenRecipeSO waitingRecipe = RecipeList.KitchenRecipeList[UnityEngine.Random.Range(0, RecipeList.KitchenRecipeList.Count)];
                 Debug.Log(waitingRecipe.RecipeName);
                 waitingRecipeSOList.Add(waitingRecipe);
-                RecipeInWaiting?.Invoke(this,EventArgs.Empty);
+                RecipeInWaiting?.Invoke(this, EventArgs.Empty);
 
             }
-            
+
 
         }
     }
 
     public void CheckIngredients(PlateKitchenObject plateKitchenObject)
     {
-        for (int i=0; i < waitingRecipeSOList.Count; i++){
-            KitchenRecipeSO waitingrecipe= waitingRecipeSOList[i];
+        for (int i = 0; i < waitingRecipeSOList.Count; i++)
+        {
+            KitchenRecipeSO waitingrecipe = waitingRecipeSOList[i];
             if (waitingrecipe.RecipeIngredients.Count == plateKitchenObject.ListOfKitchenObjects().Count)
             {
                 bool KitchenObjectContentMatches = true; // number of items in the plate is equal to the number items in the waitingRecipe
@@ -64,7 +67,7 @@ public class DeliveryManager : MonoBehaviour
                     if (!IngredientFound)
                     {
                         KitchenObjectContentMatches = false;
-                     
+
                     }
                 }
 
@@ -73,10 +76,11 @@ public class DeliveryManager : MonoBehaviour
                     waitingRecipeSOList.Remove(waitingrecipe);
                     RecipeWaitingEnd?.Invoke(this, EventArgs.Empty);
                     OnRecipeSuccess?.Invoke(this, EventArgs.Empty);
+                    NumberOfRecipesDelivered++;
                     return;
                 }
-            }  
-            
+            }
+
 
         }
         OnRecipeFailure?.Invoke(this, EventArgs.Empty);
@@ -86,6 +90,14 @@ public class DeliveryManager : MonoBehaviour
 
     public List<KitchenRecipeSO> GetKitchenRecipeListSO()
     {
-       return waitingRecipeSOList;
+        return waitingRecipeSOList;
+    }
+
+    public float ReturnRecipesDelivered()
+    {
+        return NumberOfRecipesDelivered;
+
     }
 }
+
+  
