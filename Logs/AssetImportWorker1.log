@@ -15,7 +15,7 @@ D:/New folder/KitchenBuddy
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-50517
+51372
 -job-worker-count
 5
 -background-job-worker-count
@@ -61,12 +61,12 @@ D:/New folder/KitchenBuddy
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [21456]  Target information:
+Player connection [7616]  Target information:
 
-Player connection [21456]  * "[IP] 192.168.1.10 [Port] 0 [Flags] 2 [Guid] 2843967236 [EditorId] 2843967236 [Version] 1048832 [Id] WindowsEditor(7,jaishree) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [7616]  * "[IP] 192.168.1.10 [Port] 0 [Flags] 2 [Guid] 3436736420 [EditorId] 3436736420 [Version] 1048832 [Id] WindowsEditor(7,jaishree) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [21456] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [21456] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [7616] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [7616] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 5
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -78,7 +78,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 10.73 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 12.84 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.1.0a9 (0115cb901a32)
 [Subsystems] Discovering subsystems at path D:/unity hub editor/6000.1.0a9/Editor/Data/Resources/UnitySubsystems
@@ -95,43 +95,43 @@ Initialize mono
 Mono path[0] = 'D:/unity hub editor/6000.1.0a9/Editor/Data/Managed'
 Mono path[1] = 'D:/unity hub editor/6000.1.0a9/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/unity hub editor/6000.1.0a9/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56940
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56884
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/unity hub editor/6000.1.0a9/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004129 seconds.
-- Loaded All Assemblies, in  0.625 seconds
+Registered in 0.003092 seconds.
+- Loaded All Assemblies, in  0.712 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.588 seconds
-Domain Reload Profiling: 1213ms
-	BeginReloadAssembly (270ms)
+- Finished resetting the current domain, in  0.641 seconds
+Domain Reload Profiling: 1353ms
+	BeginReloadAssembly (342ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (2ms)
-	RebuildCommonClasses (55ms)
-	RebuildNativeTypeToScriptingClass (16ms)
-	initialDomainReloadingComplete (69ms)
-	LoadAllAssembliesAndSetupDomain (214ms)
-		LoadAssemblies (266ms)
+		CreateAndSetChildDomain (3ms)
+	RebuildCommonClasses (64ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (68ms)
+	LoadAllAssembliesAndSetupDomain (223ms)
+		LoadAssemblies (337ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (210ms)
-			TypeCache.Refresh (207ms)
-				TypeCache.ScanAssembly (187ms)
-			BuildScriptInfoCaches (0ms)
+		AnalyzeDomain (218ms)
+			TypeCache.Refresh (215ms)
+				TypeCache.ScanAssembly (194ms)
+			BuildScriptInfoCaches (1ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (589ms)
+	FinalizeReload (642ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (533ms)
+		SetupLoadedEditorAssemblies (502ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (38ms)
-			SetLoadedEditorAssemblies (6ms)
-			BeforeProcessingInitializeOnLoad (85ms)
-			ProcessInitializeOnLoadAttributes (310ms)
-			ProcessInitializeOnLoadMethodAttributes (93ms)
+			InitializePlatformSupportModulesInManaged (37ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (86ms)
+			ProcessInitializeOnLoadAttributes (274ms)
+			ProcessInitializeOnLoadMethodAttributes (98ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -143,11 +143,11 @@ Import Worker Mode flag is 0x00
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.286 seconds
+- Loaded All Assemblies, in  1.257 seconds
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 0.68 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 3.27 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Package Manager log level set to [2]
@@ -155,44 +155,52 @@ Package Manager log level set to [2]
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.583 seconds
-Domain Reload Profiling: 2867ms
-	BeginReloadAssembly (244ms)
+- Finished resetting the current domain, in  1.688 seconds
+Domain Reload Profiling: 2943ms
+	BeginReloadAssembly (256ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
+		DisableScriptedObjects (7ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (43ms)
-	RebuildCommonClasses (45ms)
+		CreateAndSetChildDomain (42ms)
+	RebuildCommonClasses (52ms)
 	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (52ms)
-	LoadAllAssembliesAndSetupDomain (929ms)
-		LoadAssemblies (667ms)
+	initialDomainReloadingComplete (53ms)
+	LoadAllAssembliesAndSetupDomain (881ms)
+		LoadAssemblies (656ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (411ms)
-			TypeCache.Refresh (279ms)
-				TypeCache.ScanAssembly (257ms)
-			BuildScriptInfoCaches (110ms)
-			ResolveRequiredComponents (17ms)
-	FinalizeReload (1584ms)
+		AnalyzeDomain (386ms)
+			TypeCache.Refresh (264ms)
+				TypeCache.ScanAssembly (238ms)
+			BuildScriptInfoCaches (93ms)
+			ResolveRequiredComponents (24ms)
+	FinalizeReload (1688ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1335ms)
+		SetupLoadedEditorAssemblies (1346ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (137ms)
-			ProcessInitializeOnLoadAttributes (1052ms)
-			ProcessInitializeOnLoadMethodAttributes (137ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (150ms)
+			ProcessInitializeOnLoadAttributes (1031ms)
+			ProcessInitializeOnLoadMethodAttributes (155ms)
 			AfterProcessingInitializeOnLoad (2ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (8ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.83 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.73 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 219 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6403 unused Assets / (4.9 MB). Loaded Objects now: 7120.
-Memory consumption went from 169.4 MB to 164.4 MB.
-Total: 16.708000 ms (FindLiveObjects: 1.898700 ms CreateObjectMapping: 0.705500 ms MarkObjects: 8.748300 ms  DeleteObjects: 5.353000 ms)
+Unloading 6403 unused Assets / (4.7 MB). Loaded Objects now: 7120.
+Memory consumption went from 171.4 MB to 166.7 MB.
+Total: 22.659900 ms (FindLiveObjects: 2.510600 ms CreateObjectMapping: 0.827300 ms MarkObjects: 11.545600 ms  DeleteObjects: 7.766900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1539877.723364 seconds.
+  path: Assets/_Assets/FBX/Stickman Hero Blue@Unarmed Run Forward.fbx
+  artifactKey: Guid(cc76bd0aef024ec49909ef9c43a4d1dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/FBX/Stickman Hero Blue@Unarmed Run Forward.fbx using Guid(cc76bd0aef024ec49909ef9c43a4d1dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '85eb18bc5f1173d9349b2038f9fb3933') in 2.8863862 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 118
 

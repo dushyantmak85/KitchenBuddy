@@ -15,7 +15,7 @@ D:/New folder/KitchenBuddy
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50517
+51372
 -job-worker-count
 5
 -background-job-worker-count
@@ -61,12 +61,12 @@ D:/New folder/KitchenBuddy
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [1128]  Target information:
+Player connection [13872]  Target information:
 
-Player connection [1128]  * "[IP] 192.168.1.10 [Port] 0 [Flags] 2 [Guid] 824137635 [EditorId] 824137635 [Version] 1048832 [Id] WindowsEditor(7,jaishree) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [13872]  * "[IP] 192.168.1.10 [Port] 0 [Flags] 2 [Guid] 3720804189 [EditorId] 3720804189 [Version] 1048832 [Id] WindowsEditor(7,jaishree) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [1128] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [1128] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [13872] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [13872] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 5
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -78,7 +78,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 10.73 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 3.86 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.1.0a9 (0115cb901a32)
 [Subsystems] Discovering subsystems at path D:/unity hub editor/6000.1.0a9/Editor/Data/Resources/UnitySubsystems
@@ -95,43 +95,43 @@ Initialize mono
 Mono path[0] = 'D:/unity hub editor/6000.1.0a9/Editor/Data/Managed'
 Mono path[1] = 'D:/unity hub editor/6000.1.0a9/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/unity hub editor/6000.1.0a9/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56496
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56936
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/unity hub editor/6000.1.0a9/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003599 seconds.
-- Loaded All Assemblies, in  0.644 seconds
+Registered in 0.002999 seconds.
+- Loaded All Assemblies, in  0.712 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.565 seconds
-Domain Reload Profiling: 1210ms
-	BeginReloadAssembly (270ms)
+- Finished resetting the current domain, in  0.639 seconds
+Domain Reload Profiling: 1353ms
+	BeginReloadAssembly (342ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (2ms)
-	RebuildCommonClasses (57ms)
-	RebuildNativeTypeToScriptingClass (16ms)
-	initialDomainReloadingComplete (67ms)
-	LoadAllAssembliesAndSetupDomain (232ms)
-		LoadAssemblies (266ms)
+	RebuildCommonClasses (66ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (66ms)
+	LoadAllAssembliesAndSetupDomain (223ms)
+		LoadAssemblies (336ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (228ms)
-			TypeCache.Refresh (226ms)
-				TypeCache.ScanAssembly (210ms)
+		AnalyzeDomain (218ms)
+			TypeCache.Refresh (216ms)
+				TypeCache.ScanAssembly (196ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (567ms)
+	FinalizeReload (641ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (513ms)
+		SetupLoadedEditorAssemblies (503ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (35ms)
-			SetLoadedEditorAssemblies (7ms)
+			InitializePlatformSupportModulesInManaged (38ms)
+			SetLoadedEditorAssemblies (6ms)
 			BeforeProcessingInitializeOnLoad (87ms)
-			ProcessInitializeOnLoadAttributes (285ms)
-			ProcessInitializeOnLoadMethodAttributes (99ms)
+			ProcessInitializeOnLoadAttributes (278ms)
+			ProcessInitializeOnLoadMethodAttributes (93ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -143,11 +143,11 @@ Import Worker Mode flag is 0x00
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.271 seconds
+- Loaded All Assemblies, in  1.231 seconds
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 1.71 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.74 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Package Manager log level set to [2]
@@ -155,76 +155,92 @@ Package Manager log level set to [2]
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.579 seconds
-Domain Reload Profiling: 2850ms
-	BeginReloadAssembly (237ms)
+- Finished resetting the current domain, in  1.690 seconds
+Domain Reload Profiling: 2921ms
+	BeginReloadAssembly (253ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (9ms)
+		DisableScriptedObjects (8ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (43ms)
-	RebuildCommonClasses (45ms)
-	RebuildNativeTypeToScriptingClass (15ms)
-	initialDomainReloadingComplete (55ms)
-	LoadAllAssembliesAndSetupDomain (917ms)
-		LoadAssemblies (656ms)
+		CreateAndSetChildDomain (45ms)
+	RebuildCommonClasses (48ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (49ms)
+	LoadAllAssembliesAndSetupDomain (864ms)
+		LoadAssemblies (635ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (406ms)
-			TypeCache.Refresh (283ms)
-				TypeCache.ScanAssembly (252ms)
-			BuildScriptInfoCaches (103ms)
-			ResolveRequiredComponents (15ms)
-	FinalizeReload (1580ms)
+		AnalyzeDomain (385ms)
+			TypeCache.Refresh (259ms)
+				TypeCache.ScanAssembly (233ms)
+			BuildScriptInfoCaches (97ms)
+			ResolveRequiredComponents (23ms)
+	FinalizeReload (1690ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1332ms)
+		SetupLoadedEditorAssemblies (1352ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (2ms)
+			InitializePlatformSupportModulesInManaged (3ms)
 			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (143ms)
-			ProcessInitializeOnLoadAttributes (1046ms)
-			ProcessInitializeOnLoadMethodAttributes (134ms)
+			BeforeProcessingInitializeOnLoad (154ms)
+			ProcessInitializeOnLoadAttributes (1028ms)
+			ProcessInitializeOnLoadMethodAttributes (160ms)
 			AfterProcessingInitializeOnLoad (2ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (6ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.90 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.07 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 219 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 6403 unused Assets / (4.6 MB). Loaded Objects now: 7120.
-Memory consumption went from 171.4 MB to 166.8 MB.
-Total: 16.431100 ms (FindLiveObjects: 1.967800 ms CreateObjectMapping: 0.772700 ms MarkObjects: 9.084000 ms  DeleteObjects: 4.601400 ms)
+Memory consumption went from 171.4 MB to 166.7 MB.
+Total: 21.887100 ms (FindLiveObjects: 2.746500 ms CreateObjectMapping: 1.015800 ms MarkObjects: 12.154900 ms  DeleteObjects: 5.963500 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1531397.179671 seconds.
-  path: Assets/_Assets/Animations/Player.controller
-  artifactKey: Guid(109831050e4717746a643c3caee1b864) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Assets/Animations/Player.controller using Guid(109831050e4717746a643c3caee1b864) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5bc08ecba8cad3bd92987f65bf701cb3') in 0.0424063 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
-
-========================================================================
-Received Import Request.
-  Time since last request: 57.100923 seconds.
-  path: Assets/Focree/Stickman Hero Boy- Character Pack/Animations/AC_Hero.controller
-  artifactKey: Guid(bf902eb18ed2354479a7a38a2a15a56e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Focree/Stickman Hero Boy- Character Pack/Animations/AC_Hero.controller using Guid(bf902eb18ed2354479a7a38a2a15a56e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ecfd4e86b1ed1369d0760d9028d2aef9') in 0.0125375 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.232371 seconds.
-  path: Assets/Focree/Stickman Hero Boy- Character Pack/Animations/Idle.anim
-  artifactKey: Guid(9033d1ad6d3f9044ab9f74cdd8ce40d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Focree/Stickman Hero Boy- Character Pack/Animations/Idle.anim using Guid(9033d1ad6d3f9044ab9f74cdd8ce40d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '52a3a5eac7bcc0b528db273fe247ecb7') in 0.00989 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 113.850530 seconds.
+  Time since last request: 1538018.336136 seconds.
   path: Assets/_Assets/Animations/PlayerAnimator Controller.controller
   artifactKey: Guid(c4dde1f54a1b7fb4a99299a1419045cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Assets/Animations/PlayerAnimator Controller.controller using Guid(c4dde1f54a1b7fb4a99299a1419045cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '791bad3dc88f586ada988dadddc60d2b') in 0.0030669 seconds
+Start importing Assets/_Assets/Animations/PlayerAnimator Controller.controller using Guid(c4dde1f54a1b7fb4a99299a1419045cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '19aa72b3c331cea8ffe475282222b58f') in 0.0635017 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 1310.866896 seconds.
+  path: Assets/_Assets/Animations/ContainerCounterOpenClose.anim
+  artifactKey: Guid(f8c1f20930651254f9dad32e4686d44d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Animations/ContainerCounterOpenClose.anim using Guid(f8c1f20930651254f9dad32e4686d44d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4aa3002f10b7e51f9827fd6b2aff6f80') in 0.300811 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.933238 seconds.
+  path: Assets/_Assets/Animations/ContainerCounterClosed.anim
+  artifactKey: Guid(7e9192aa6090c834589ba44fb1d962a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Animations/ContainerCounterClosed.anim using Guid(7e9192aa6090c834589ba44fb1d962a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '14b7dee002247cceae492db196afd894') in 0.0088882 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.363925 seconds.
+  path: Assets/_Assets/Animations/CuttingCounterCut.anim
+  artifactKey: Guid(d7dc3ae032292ec4790e41ed41f65f1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Animations/CuttingCounterCut.anim using Guid(d7dc3ae032292ec4790e41ed41f65f1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '43bfce77056e5a3366190cb614abfdae') in 0.0041685 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 476.541859 seconds.
+  path: Assets/_Assets/FBX
+  artifactKey: Guid(06f84d4886fd6824bbf1ea49589dab3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/FBX using Guid(06f84d4886fd6824bbf1ea49589dab3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'aa13a99cdd8f4ff0e4a5932a4859f58b') in 0.0124262 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 62.409388 seconds.
+  path: Assets/_Assets/FBX/Stickman Hero Blue@Walking.fbx
+  artifactKey: Guid(bb659edd60bf7af4597a9c2716f1f2ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/FBX/Stickman Hero Blue@Walking.fbx using Guid(bb659edd60bf7af4597a9c2716f1f2ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '18bd0921a91d22a86400c44b0c35549b') in 2.8028024 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 118
 

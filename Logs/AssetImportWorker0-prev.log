@@ -15,7 +15,7 @@ D:/New folder/KitchenBuddy
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-54086
+50517
 -job-worker-count
 5
 -background-job-worker-count
@@ -61,12 +61,12 @@ D:/New folder/KitchenBuddy
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [16276]  Target information:
+Player connection [1128]  Target information:
 
-Player connection [16276]  * "[IP] 192.168.1.10 [Port] 0 [Flags] 2 [Guid] 600267378 [EditorId] 600267378 [Version] 1048832 [Id] WindowsEditor(7,jaishree) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [1128]  * "[IP] 192.168.1.10 [Port] 0 [Flags] 2 [Guid] 824137635 [EditorId] 824137635 [Version] 1048832 [Id] WindowsEditor(7,jaishree) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [16276] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [16276] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [1128] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [1128] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 5
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -78,7 +78,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 8.98 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 10.73 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.1.0a9 (0115cb901a32)
 [Subsystems] Discovering subsystems at path D:/unity hub editor/6000.1.0a9/Editor/Data/Resources/UnitySubsystems
@@ -95,43 +95,43 @@ Initialize mono
 Mono path[0] = 'D:/unity hub editor/6000.1.0a9/Editor/Data/Managed'
 Mono path[1] = 'D:/unity hub editor/6000.1.0a9/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/unity hub editor/6000.1.0a9/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56460
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56496
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/unity hub editor/6000.1.0a9/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004531 seconds.
-- Loaded All Assemblies, in  0.937 seconds
+Registered in 0.003599 seconds.
+- Loaded All Assemblies, in  0.644 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.703 seconds
-Domain Reload Profiling: 1640ms
-	BeginReloadAssembly (366ms)
+- Finished resetting the current domain, in  0.565 seconds
+Domain Reload Profiling: 1210ms
+	BeginReloadAssembly (270ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (86ms)
+		CreateAndSetChildDomain (2ms)
+	RebuildCommonClasses (57ms)
 	RebuildNativeTypeToScriptingClass (16ms)
-	initialDomainReloadingComplete (95ms)
-	LoadAllAssembliesAndSetupDomain (374ms)
-		LoadAssemblies (364ms)
+	initialDomainReloadingComplete (67ms)
+	LoadAllAssembliesAndSetupDomain (232ms)
+		LoadAssemblies (266ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (367ms)
-			TypeCache.Refresh (364ms)
-				TypeCache.ScanAssembly (333ms)
+		AnalyzeDomain (228ms)
+			TypeCache.Refresh (226ms)
+				TypeCache.ScanAssembly (210ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (704ms)
+	FinalizeReload (567ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (637ms)
+		SetupLoadedEditorAssemblies (513ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (47ms)
+			InitializePlatformSupportModulesInManaged (35ms)
 			SetLoadedEditorAssemblies (7ms)
-			BeforeProcessingInitializeOnLoad (118ms)
-			ProcessInitializeOnLoadAttributes (354ms)
-			ProcessInitializeOnLoadMethodAttributes (112ms)
+			BeforeProcessingInitializeOnLoad (87ms)
+			ProcessInitializeOnLoadAttributes (285ms)
+			ProcessInitializeOnLoadMethodAttributes (99ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -143,11 +143,11 @@ Import Worker Mode flag is 0x00
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.894 seconds
+- Loaded All Assemblies, in  1.271 seconds
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 2.06 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.71 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Package Manager log level set to [2]
@@ -155,72 +155,76 @@ Package Manager log level set to [2]
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.719 seconds
-Domain Reload Profiling: 3613ms
-	BeginReloadAssembly (433ms)
+- Finished resetting the current domain, in  1.579 seconds
+Domain Reload Profiling: 2850ms
+	BeginReloadAssembly (237ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
+		DisableScriptedObjects (9ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (74ms)
-	RebuildCommonClasses (56ms)
-	RebuildNativeTypeToScriptingClass (18ms)
-	initialDomainReloadingComplete (54ms)
-	LoadAllAssembliesAndSetupDomain (1332ms)
-		LoadAssemblies (955ms)
+		CreateAndSetChildDomain (43ms)
+	RebuildCommonClasses (45ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (55ms)
+	LoadAllAssembliesAndSetupDomain (917ms)
+		LoadAssemblies (656ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (646ms)
-			TypeCache.Refresh (440ms)
-				TypeCache.ScanAssembly (390ms)
-			BuildScriptInfoCaches (172ms)
-			ResolveRequiredComponents (24ms)
-	FinalizeReload (1720ms)
+		AnalyzeDomain (406ms)
+			TypeCache.Refresh (283ms)
+				TypeCache.ScanAssembly (252ms)
+			BuildScriptInfoCaches (103ms)
+			ResolveRequiredComponents (15ms)
+	FinalizeReload (1580ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1417ms)
+		SetupLoadedEditorAssemblies (1332ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (2ms)
 			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (154ms)
-			ProcessInitializeOnLoadAttributes (1088ms)
-			ProcessInitializeOnLoadMethodAttributes (166ms)
+			BeforeProcessingInitializeOnLoad (143ms)
+			ProcessInitializeOnLoadAttributes (1046ms)
+			ProcessInitializeOnLoadMethodAttributes (134ms)
 			AfterProcessingInitializeOnLoad (2ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (6ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 1.15 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.90 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 219 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6403 unused Assets / (3.9 MB). Loaded Objects now: 7120.
-Memory consumption went from 170.9 MB to 167.0 MB.
-Total: 20.825100 ms (FindLiveObjects: 2.128800 ms CreateObjectMapping: 0.832100 ms MarkObjects: 12.393300 ms  DeleteObjects: 5.152600 ms)
+Unloading 6403 unused Assets / (4.6 MB). Loaded Objects now: 7120.
+Memory consumption went from 171.4 MB to 166.8 MB.
+Total: 16.431100 ms (FindLiveObjects: 1.967800 ms CreateObjectMapping: 0.772700 ms MarkObjects: 9.084000 ms  DeleteObjects: 4.601400 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 924811.818679 seconds.
-  path: Assets/_Assets/Sounds/Music/The-Builder(chosic.com).mp3
-  artifactKey: Guid(e2dbab7d8dab2524891306027399d9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Assets/Sounds/Music/The-Builder(chosic.com).mp3 using Guid(e2dbab7d8dab2524891306027399d9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '873b4c42d2a129dd2d60ea419fb7e1ad') in 0.3089054 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+  Time since last request: 1531397.179671 seconds.
+  path: Assets/_Assets/Animations/Player.controller
+  artifactKey: Guid(109831050e4717746a643c3caee1b864) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Animations/Player.controller using Guid(109831050e4717746a643c3caee1b864) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5bc08ecba8cad3bd92987f65bf701cb3') in 0.0424063 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000258 seconds.
-  path: Assets/_Assets/Sounds/Music
-  artifactKey: Guid(75c3d2218aae7da40a52c3e7c204fc3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Assets/Sounds/Music using Guid(75c3d2218aae7da40a52c3e7c204fc3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ecd42331cdb5d6fb55c9fc06bdcb82b9') in 0.0017604 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 57.100923 seconds.
+  path: Assets/Focree/Stickman Hero Boy- Character Pack/Animations/AC_Hero.controller
+  artifactKey: Guid(bf902eb18ed2354479a7a38a2a15a56e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Focree/Stickman Hero Boy- Character Pack/Animations/AC_Hero.controller using Guid(bf902eb18ed2354479a7a38a2a15a56e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ecfd4e86b1ed1369d0760d9028d2aef9') in 0.0125375 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000089 seconds.
-  path: Assets/_Assets/Sounds/Music/fm-freemusic-cheerful-whistling(chosic.com).mp3
-  artifactKey: Guid(a669d5cfd8d58284d84231a8b5043801) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/_Assets/Sounds/Music/fm-freemusic-cheerful-whistling(chosic.com).mp3 using Guid(a669d5cfd8d58284d84231a8b5043801) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7e17ce4802d64bfa6167edb292aaf21e') in 0.0447121 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+  Time since last request: 4.232371 seconds.
+  path: Assets/Focree/Stickman Hero Boy- Character Pack/Animations/Idle.anim
+  artifactKey: Guid(9033d1ad6d3f9044ab9f74cdd8ce40d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Focree/Stickman Hero Boy- Character Pack/Animations/Idle.anim using Guid(9033d1ad6d3f9044ab9f74cdd8ce40d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '52a3a5eac7bcc0b528db273fe247ecb7') in 0.00989 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+========================================================================
+Received Import Request.
+  Time since last request: 113.850530 seconds.
+  path: Assets/_Assets/Animations/PlayerAnimator Controller.controller
+  artifactKey: Guid(c4dde1f54a1b7fb4a99299a1419045cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Assets/Animations/PlayerAnimator Controller.controller using Guid(c4dde1f54a1b7fb4a99299a1419045cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '791bad3dc88f586ada988dadddc60d2b') in 0.0030669 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
