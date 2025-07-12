@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour,IKitchenObjectParent
     [SerializeField] private GameObject PlayerVisual;
     [SerializeField] private GameInput input;
     [SerializeField] private Transform KitchenObjectOnHold;
+    private Animator animator;
 
     private KitchenObjects KitchenObject;
 
@@ -53,6 +54,7 @@ public class PlayerController : MonoBehaviour,IKitchenObjectParent
        
         input.OnInteract += GameInput_OnInteraction;
         input.OnInteractAlternateAction += GameInput_OnInteractAlternateAction;
+       
     }
 
     private void GameInput_OnInteraction(object sender, EventArgs e)
@@ -166,7 +168,7 @@ public class PlayerController : MonoBehaviour,IKitchenObjectParent
 
         if (canMove)
         {
-            transform.position += moveDir * movespeed * Time.deltaTime;
+            GetComponent<CharacterController>().Move(moveDir * movespeed * Time.deltaTime);
         }
 
         IsWalking = moveDir != Vector3.zero;
@@ -176,7 +178,8 @@ public class PlayerController : MonoBehaviour,IKitchenObjectParent
             Quaternion toRotation = Quaternion.LookRotation(moveDir, Vector3.up);
             PlayerVisual.transform.rotation = Quaternion.RotateTowards(PlayerVisual.transform.rotation, toRotation, 500f * Time.deltaTime);
         }
-        Debug.DrawRay(rayOrigin, moveDir * rayLength, Color.red, 0f);
+     
+
     }
 
     private void SetSelectedCounter(BaseCounter selectedCounter)
